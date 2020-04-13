@@ -1,0 +1,15 @@
+export enum OPERATOR {
+    EQ = 'EQ',
+    NE = 'NE',
+    GE = 'GE',
+    BETWEEN = 'BETWEEN',
+    GT = 'GT',
+    ILIKE = 'ILIKE',
+    LE = 'LE',
+    LT = 'LT',
+    LIKE = 'LIKE',
+    IN = 'IN',
+    IS_NULL = 'IS_NULL',
+    IS_NOT_NULL = 'IS_NOT_NULL',
+    PATTERN = 'PATTERN',
+}
