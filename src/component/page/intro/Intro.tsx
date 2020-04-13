@@ -31,9 +31,10 @@ class IntroComponent extends BaseComponent<IProps, IState> {
     render() {
         return (
             <>
-                <div className="h1">intro</div>
-
-                <NavLink to="home">back to home</NavLink>
+                <div className="intro-wrapper">
+                    <div className="h1">intro</div>
+                    <NavLink to="home">back to home</NavLink>
+                </div>
             </>
         )
     }
