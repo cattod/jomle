@@ -155,4 +155,5 @@ export const fa = {
     this_device: 'این دستگاه',
     zoom: 'بزرگنمایی',
     reload_app: 'بارگیری مجدد برنامه',
+    intro: 'شروع',
 }

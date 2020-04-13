@@ -161,4 +161,5 @@ export const en = {
     this_device: 'this device',
     zoom: 'zoom',
     reload_app: 'reload application',
+    intro: 'intro',
 }

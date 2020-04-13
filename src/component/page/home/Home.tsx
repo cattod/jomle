@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import { BaseComponent } from '../../_base/BaseComponent';
 import { TInternationalization } from '../../../config/setup';
 import { History } from 'history';
+import { NavLink } from 'react-router-dom';
 
 interface IState {
 }
@@ -24,6 +25,15 @@ class HomeComponent extends BaseComponent<IProps, IState> {
             <>
                 <div className="h3">version: {process.env.REACT_APP_VERSION}</div>
 
+                <div>
+                    <NavLink to="login">login</NavLink>
+                    <div></div>
+                    <NavLink to="register">register</NavLink>
+                    <div></div>
+                    <NavLink to="forget-password">forget-password</NavLink>
+                    <div></div>
+                    <NavLink to="intro">intro</NavLink>
+                </div>
 
                 <ToastContainer {...this.getNotifyContainerConfig()} />
             </>

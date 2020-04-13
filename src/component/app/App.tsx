@@ -29,6 +29,8 @@ const appRoutes = (
       {/* <RouteLayoutValidUser path="/contact/update/:id" /> */}
       {/* <RouteLayoutValidUser path="/contact/copy/:id" /> */}
 
+      <RouteLayoutValidUser path="/intro" />
+
       <RouteLayoutAccount path="/login" component={Login} />
       <RouteLayoutAccount path="/register" component={Register} />
       {/* <RouteLayoutAccount path="/forgot-password" component={ForgotPassword} /> */}

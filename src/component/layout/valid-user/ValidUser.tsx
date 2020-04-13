@@ -12,6 +12,7 @@ import { Blank } from '../../page/blank/Blank';
 import { LayoutNoWrapNotFound } from './no-wrap/not-found/NotFound';
 import { RouteLayoutNoWrap } from './no-wrap/NoWrap';
 import { Home } from '../../page/home/Home';
+import { Intro } from '../../page/intro/Intro';
 
 const appValidUserRoutes = (
     <HashRouter>
@@ -23,19 +24,12 @@ const appValidUserRoutes = (
 
             {/* <RouteLayoutMain path="/user/manage" component={UserManage} /> */}
             {/* <RouteLayoutMain path="/user/create" component={UserSave} /> */}
-            {/* <RouteLayoutMain path="/artist/manage" component={ArtistManage} />
-            <RouteLayoutMain path="/artist/create" component={ArtistSave} />
-            <RouteLayoutMain path="/artist/update/:id" component={ArtistSave} />
-            <RouteLayoutMain path="/artist/copy/:id" component={ArtistSave} />
-            <RouteLayoutMain path="/artwork/manage" component={ArtworkManage} />
-            <RouteLayoutMain path="/artwork/create" component={ArtworkSave} />
-            <RouteLayoutMain path="/artwork/update/:id" component={ArtworkSave} />
-            <RouteLayoutMain path="/artwork/copy/:id" component={ArtworkSave} />
-            <RouteLayoutMain path="/contact/manage" component={ContactManage} />
+            {/* <RouteLayoutMain path="/contact/manage" component={ContactManage} />
             <RouteLayoutMain path="/contact/create" component={ContactSave} />
             <RouteLayoutMain path="/contact/update/:id" component={ContactSave} />
-            <RouteLayoutMain path="/contact/copy/:id" component={ContactSave} />
-            <RouteLayoutMain path="/invoice/manage" component={InvoiceManage} /> */}
+            <RouteLayoutMain path="/contact/copy/:id" component={ContactSave} /> */}
+
+            <RouteLayoutNoWrap component={Intro} />
 
             {/* keep "cmp LayoutNoWrapNotFound" last */}
             <RouteLayoutNoWrap component={LayoutNoWrapNotFound} />
