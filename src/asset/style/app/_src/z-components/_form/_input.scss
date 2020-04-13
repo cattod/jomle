@@ -1,0 +1,50 @@
+.app-input {
+  &.input-readonly {
+    input {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &.input-bordered-bottom {
+    label {
+      margin-bottom: 0;
+    }
+    input {
+      box-shadow: none;
+      border-radius: 0;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  @each $color, $color-varient in $app-colors {
+    &.input-border-#{$color} {
+      input {
+        border-color: app-color($color);
+      }
+    }
+  }
+
+  &.input-lg {
+    .form-control {
+      // input {
+      @extend .form-control-lg;
+    }
+  }
+
+  &.label-uppercase {
+    label {
+      text-transform: uppercase;
+    }
+  }
+  &.label-none {
+    label {
+      visibility: hidden;
+    }
+  }
+}

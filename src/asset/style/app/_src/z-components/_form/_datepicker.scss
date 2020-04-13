@@ -1,0 +1,22 @@
+@import "~react-datepicker/src/stylesheets/datepicker";
+
+.app-datepicker {
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+    input.app-datepicker-input {
+        @extend .form-control;
+        width: 100% !important;
+    }
+
+    &.label-uppercase {
+        label {
+            text-transform: uppercase;
+        }
+    }
+    &.label-none {
+        label {
+            visibility: hidden;
+        }
+    }
+}

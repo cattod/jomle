@@ -1,0 +1,46 @@
+.app-form-inline {
+  display: block;
+}
+
+@include media-breakpoint-up(sm) {
+  .form-inline {
+    &.app-form-inline {
+      .form-group {
+        margin-bottom: 1rem;
+        label {
+          flex-basis: 100px;
+          word-break: break-word;
+
+          body:not(.rtl) & {
+            justify-content: left;
+          }
+          body.rtl & {
+            justify-content: right;
+          }
+        }
+        .form-control,
+        .app-select,
+        .app-datepicker-holder {
+          // flex-basis: calc(100% - 100px);
+          width: calc(100% - 100px);
+        }
+
+        .app-checkbox-wrapper label {
+          flex-basis: unset;
+          display: inline-block;
+        }
+
+        &.label-none {
+          label {
+            display: none;
+          }
+          .form-control,
+          .app-select,
+          .app-datepicker-holder {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
