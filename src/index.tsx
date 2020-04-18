@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './asset/style/app/skin-default/style.scss';
+import "react-alice-carousel/lib/alice-carousel.css";
 import { App } from './component/app/App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';

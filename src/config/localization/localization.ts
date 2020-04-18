@@ -182,6 +182,15 @@ interface ILocalization extends LocalizedStringsMethods {
 
 
     intro: string;
+    intro_cards: {
+        card_img_url: string;
+        card_img_alt: string;
+        card_title: string;
+        card_desc: string;
+        card_cta_text: string;
+        card_skip_link: string;
+        card_skip_link_text: string;
+    }[]
 }
 
 export const Localization: ILocalization = new LocalizedStrings({

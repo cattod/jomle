@@ -162,4 +162,33 @@ export const en = {
     zoom: 'zoom',
     reload_app: 'reload application',
     intro: 'intro',
+    intro_cards: [
+        {
+            card_img_url: '/static/media/intro/intro-character-01.svg',
+            card_img_alt: 'illustration of a person reading a book',
+            card_title: 'any book you want!',
+            card_desc: 'an english description for this card.',
+            card_cta_text: 'card CTA',
+            card_skip_link: '',
+            card_skip_link_text: 'card skip link text'
+        },
+        {
+            card_img_url: '/static/media/intro/intro-character-02.svg',
+            card_img_alt: 'illustration of a person reading a book',
+            card_title: 'any book you want!',
+            card_desc: 'an english description for this card.',
+            card_cta_text: 'card CTA',
+            card_skip_link: '',
+            card_skip_link_text: 'card skip link text'
+        },
+        {
+            card_img_url: '/static/media/intro/intro-character-03.svg',
+            card_img_alt: 'illustration of a person reading a book',
+            card_title: 'any book you want!',
+            card_desc: 'an english description for this card.',
+            card_cta_text: 'card CTA',
+            card_skip_link: '',
+            card_skip_link_text: 'card skip link text'
+        }
+    ]
 }

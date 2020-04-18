@@ -156,4 +156,33 @@ export const fa = {
     zoom: 'بزرگنمایی',
     reload_app: 'بارگیری مجدد برنامه',
     intro: 'شروع',
+    intro_cards: [
+        {
+            card_img_url: '/static/media/img/intro/intro-character-01.svg',
+            card_img_alt: 'تصویری از فرد در حال مطالعه',
+            card_title: 'هر کتابی دلت بخواد!',
+            card_desc: 'چه کتاب چاپی باشه چه کتاب الکترونیکی، چه صوتی باشه چه کمیک، دست دوم یا نو، اینجا پیدا میشه.',
+            card_cta_text: 'چه خوب',
+            card_skip_link: '',
+            card_skip_link_text: 'متوجه شدم :)'
+        },
+        {
+            card_img_url: '/static/media/img/intro/intro-character-02.svg',
+            card_img_alt: 'تصویری از فرد در حال مطالعه',
+            card_title: 'هر کتابی دلت بخواد!',
+            card_desc: 'چه کتاب چاپی باشه چه کتاب الکترونیکی، چه صوتی باشه چه کمیک، دست دوم یا نو، اینجا پیدا میشه.',
+            card_cta_text: 'بعدی',
+            card_skip_link: '',
+            card_skip_link_text: 'متوجه شدم :)'
+        },
+        {
+            card_img_url: '/static/media/img/intro/intro-character-03.svg',
+            card_img_alt: 'تصویری از فرد در حال مطالعه',
+            card_title: 'هر کتابی دلت بخواد!',
+            card_desc: 'چه کتاب چاپی باشه چه کتاب الکترونیکی، چه صوتی باشه چه کمیک، دست دوم یا نو، اینجا پیدا میشه.',
+            card_cta_text: 'شروع کنیم',
+            card_skip_link: '',
+            card_skip_link_text: 'متوجه شدم :)'
+        }
+    ]
 }
