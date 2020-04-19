@@ -47,8 +47,8 @@ class IntroComponent extends BaseComponent<IProps, IState> {
             slideToIndex: this.state.currentIndex,
             onSlideChanged: this.onSlideChanged,
             infinite: false,
-            touchTrackingEnabled: false,
-            mouseTrackingEnabled: false
+            touchTrackingEnabled: true,
+            mouseTrackingEnabled: true
         }
         return (
             <>
@@ -62,6 +62,7 @@ class IntroComponent extends BaseComponent<IProps, IState> {
                             currentBullet={index}
                             key={index}
                             handleNext={this.slideNext}
+                            handleClick={this.slideTo}
                         />
                         )}
                     </AliceCarousel>

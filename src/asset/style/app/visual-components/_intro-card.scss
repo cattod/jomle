@@ -9,7 +9,8 @@
 
     img {
         display: block;
-        margin: 90px auto;
+        height: 25vh;
+        margin: 10vh auto;
     }
 
     h2 {
@@ -24,7 +25,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #303332;
-        margin-bottom: 50px;
+        margin-bottom: 8vh;
     }
 
     .skip-link {
@@ -39,13 +40,16 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    margin: 5vh 0;
     
     .bullet {
         background-color: #CDD9D3;
+        border: 0;
         border-radius: 50%;
+        display: block;
         height: 6px;
         margin: 0 4px;
+        padding: 0;
         width: 6px;
 
         &.is-active {
@@ -60,5 +64,5 @@
     box-shadow: 0px 4px 14px rgba(247, 125, 106, 0.3);
     border-radius: 8px;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
 }

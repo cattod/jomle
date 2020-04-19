@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Carousel } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 
 interface IProps {
@@ -10,20 +10,41 @@ interface IProps {
     card_cta_text: string;
     card_skip_link: string;
     card_skip_link_text: string;
-    bulletsLength?: number
-    currentBullet?: number
+    bulletsLength: number
+    currentBullet: number
     handleNext: () => void
+    handleClick: (i: number) => void
 }
 interface IState { }
 
 class IntroCard extends React.Component<IProps, IState> {
+    handleClick = (i: number) => {
+        this.props.handleClick(i)
+    }
+
+    nextButton = () => {
+        if (this.props.currentBullet === (this.props.bulletsLength - 1)) {
+            return <NavLink
+                to={this.props.card_skip_link}
+                className="btn btn-main btn-block"
+            >
+                {this.props.card_cta_text}
+            </NavLink>
+        } else {
+            return <button
+                type="button"
+                className="btn btn-main btn-block"
+                onClick={this.props.handleNext}
+            >
+                {this.props.card_cta_text}
+            </button>
+        }
+    }
+
     render() {
         const bullets: number[] = []
-
-        if (this.props.bulletsLength) {
-            for (let i = 0; i < this.props.bulletsLength; i++) {
-                bullets.push(i)
-            }
+        for (let i = 0; i < this.props.bulletsLength; i++) {
+            bullets.push(i)
         }
 
         return (
@@ -34,18 +55,17 @@ class IntroCard extends React.Component<IProps, IState> {
                             <img src={this.props.card_img_url} alt={this.props.card_img_alt} />
                             <div className="bullet-band">
                                 {
-                                    bullets.map((x, i) => <div key={i} className={'bullet ' + (i === this.props.currentBullet ? ' is-active' : '')}></div>)
+                                    bullets.map((x, i) => <button
+                                        type="button"
+                                        key={i}
+                                        className={'bullet ' + (i === this.props.currentBullet ? ' is-active' : '')}
+                                        onClick={() => this.handleClick(i)}
+                                    />)
                                 }
                             </div>
                             <h2>{this.props.card_title}</h2>
                             <p>{this.props.card_desc}</p>
-                            <button
-                                type="button"
-                                className="btn btn-main btn-block"
-                                onClick={this.props.handleNext}
-                            >
-                                {this.props.card_cta_text}
-                            </button>
+                            {this.nextButton()}
                             <NavLink
                                 to={this.props.card_skip_link}
                                 className="skip-link"
